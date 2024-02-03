@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BE Foods</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <h1>
+            BE Foods
+        </h1>
+     
+    <br>
+    
+    </header>
+    <main>
+      <nav class="menu">
+        <button class="hamburger-menu">
+          &#9776; <!-- Unicode for hamburger icon -->
+      </button>
+        <a href="index.html">Home Page</a> 
+        <a href="products.html">Products</a> 
+        <a href="brands.html">Brands</a> 
+        
+        <a href="temp.html">About Us</a> 
+        <a href="contact.html">Contact</a>
+      </nav>
+    
+      <h1></h1>
+      
+      <h2>Contact Us</h2>
+      
+      <div class="con">
+      <p>
+       For placing orders or general product infromation, please contact us at: <br><br>
+        Phone: (000)-000-0000<br><br>
+        Email:smth@mial.com
+      </p>
+      <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<script src="script.js"></script>
+    </main>
+
+      <footer>
+        <h4>Address: 111 str, City, 11111-11111</h4>
+        <h4>Phone: +1 917 0000000</h4>
+        <h4>Email: something@mail.com</h4>
+      </footer>
+      </body>
+      </html>
